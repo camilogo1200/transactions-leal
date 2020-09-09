@@ -42,6 +42,9 @@
         tools:layout="@layout/fragment_splash_screen" >
         <action
             android:id="@+id/action_splashScreenFragment_to_transactionsListFragment"
-            app:destination="@id/transactionsListFragment" />
+            app:destination="@id/transactionsListFragment"
+            app:enterAnim="@anim/from_left_animation"
+            app:exitAnim="@anim/to_left_animation"
+            app:popUpTo="@id/transactionsListFragment" />
     </fragment>
 </navigation>
