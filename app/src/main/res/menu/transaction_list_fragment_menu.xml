@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search_transaction_fragment_search_transaction"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/menu_transactions_list_fragment_search_transaction"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_refresh_transaction_fragment_refresh"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:title="@string/menu_refresh_transaction_fragment_title"
+        app:showAsAction="ifRoom" />
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_sort_transaction_fragment"
+            android:title="@string/menu_transaction_fragment_sort_by">
+            <menu>
+                <item
+                    android:id="@+id/menu_sort_transaction_fragment_date_desc"
+                    android:title="@string/menu_sort_by_transaction_fragment_date_asc" />
+                <item
+                    android:id="@+id/menu_sort_transaction_fragment_date_asc"
+                    android:title="@string/menu_sort_by_transaction_fragment_date_des" />
+            </menu>
+        </item>
+    </group>
+
+
+</menu>
