@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transactions_navigation"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/transactionsListFragment"
+        android:name="com.leal.camilogo1200.androidtest.fragments.transactionList.TransactionsListFragment"
+        android:label="fragment_transactions_list"
+        tools:layout="@layout/fragment_transactions_list" >
+        <action
+            android:id="@+id/action_transactionsListFragment_to_transactionDetailsFragment"
+            app:destination="@id/transactionDetailsFragment" />
+        <action
+            android:id="@+id/action_transactionsListFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionDetailsFragment"
+        android:name="com.leal.camilogo1200.androidtest.fragments.transactionDetails.TransactionDetailsFragment"
+        android:label="fragment_transaction_details"
+        tools:layout="@layout/fragment_transaction_details" >
+        <action
+            android:id="@+id/action_transactionDetailsFragment_to_transactionsListFragment"
+            app:destination="@id/transactionsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.leal.camilogo1200.androidtest.fragments.userList.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" >
+        <action
+            android:id="@+id/action_userListFragment_to_transactionsListFragment"
+            app:destination="@id/transactionsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.leal.camilogo1200.androidtest.fragments.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_transactionsListFragment"
+            app:destination="@id/transactionsListFragment" />
+    </fragment>
+</navigation>
