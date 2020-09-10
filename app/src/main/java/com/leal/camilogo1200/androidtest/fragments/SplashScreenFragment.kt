@@ -40,7 +40,9 @@ class SplashScreenFragment : Fragment() {
             findNavController().navigate(R.id.action_splashScreenFragment_to_transactionsListFragment)
         }
         return _binding.root
-
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+    }
 }
