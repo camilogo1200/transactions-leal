@@ -20,6 +20,8 @@ ext {
     androidXNavigationUIVersion = '2.3.0'
     androidXLegacySupportVersion = '1.0.0'
     androidXfragmentVersion = '1.2.5'
+    androidXTestVersion = '1.3.0'
+    androidXTestJunitVersion    = '1.1.2'
     daggerVersion = '2.28.3'
     jUnitVersion = '4.13'
     jUnitExtensionsVersion = '1.1.2'
@@ -73,6 +75,9 @@ ext {
     androidXNavigationDynamicFeatures = "androidx.navigation:navigation-dynamic-features-fragment:$androidXNavigationFragmentVersion"
     androidXLegacySupport = "androidx.legacy:legacy-support-v4:$androidXLegacySupportVersion"
     androidXFragment = "androidx.fragment:fragment-ktx:$androidXfragmentVersion"
+    androidXTestRunner = "androidx.test:runner:$androidXTestVersion"
+    androidXTestJunit           = "androidx.test.ext:junit:$androidXTestJunitVersion"
+    androidXTestRules           = "androidx.test:rules:$androidXTestVersion"
     materialDesign = "com.google.android.material:material:$materialVersion"
 
     dagger = "com.google.dagger:dagger:$daggerVersion"
@@ -84,6 +89,7 @@ ext {
     testingEspressoCore = "androidx.test.espresso:espresso-core:$espressoCoreVersion"
     testingMockitoInline = "org.mockito:mockito-inline:$mockitoVersion"
     testingMockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion"
+
 
     retrofit2base = "com.squareup.retrofit2:retrofit:$retrofit2Version"
     retrofit2ConverterGson = "com.squareup.retrofit2:converter-gson:$retrofit2Version"
@@ -98,7 +104,6 @@ ext {
     rxBinding = "com.jakewharton.rxbinding4:rxbinding:$rxBindingVersion"
     rxBindingSwipeRefreshlayout = "com.jakewharton.rxbinding4:rxbinding-swiperefreshlayout:$rxBindingVersion"
 
-//fullImplementation project(":network-components")
     stethoBase = "com.facebook.stetho:stetho:$stethoVersion"
     stethoOkHttp = "com.facebook.stetho:stetho-okhttp3:$stethoVersion"
 

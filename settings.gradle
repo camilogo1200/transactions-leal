@@ -1,5 +1,5 @@
 include ':utils'
 include ':domain'
 include ':data'
-include ':app'
+include ':presentation'
 rootProject.name = "Transactions By Leal"
